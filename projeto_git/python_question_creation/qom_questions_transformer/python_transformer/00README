@@ -1,0 +1,9 @@
+
+2019/02/24
+
+This is a refactoring version of
+/home/jbs/develop.old/articles/201509_python_exercises_generator/py_transformer
+
+We don't use Abstract Syntax Trees anymore. The new approach of
+tranforming python sources based on keywords, operators and
+identifiers is much more simple.

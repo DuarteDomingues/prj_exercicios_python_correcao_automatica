@@ -1,0 +1,1 @@
+A \verb+primeira+ linha de código imprime na consola o número \verb+1+.

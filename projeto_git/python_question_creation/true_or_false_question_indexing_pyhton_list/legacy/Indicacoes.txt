@@ -1,0 +1,7 @@
+Em falta: 
+
+
+- alterar os ficheiros tex
+- juntar tudo com diretorias
+- fazer classes e metodos para as coisas
+- juntar tudo num unico ficheiro

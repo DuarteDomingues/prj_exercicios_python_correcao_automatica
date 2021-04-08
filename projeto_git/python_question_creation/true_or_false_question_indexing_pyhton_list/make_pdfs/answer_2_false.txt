@@ -1,0 +1,1 @@
+Na \verb+primeira+ linha de código dá erro porque não é possível imprimir números inteiros.
