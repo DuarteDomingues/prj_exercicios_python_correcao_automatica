@@ -5,6 +5,6 @@
 ### Duarte Domingues
 ### Miguel Távora
 
-## Project coordenator :
+## Project coordenator:
 
 ### João Beleza Sousa
