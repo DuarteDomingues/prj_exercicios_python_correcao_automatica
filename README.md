@@ -1,4 +1,4 @@
-# projeto_isel_
+# projeto_isel
 
 ## authors:
 
