@@ -13,17 +13,6 @@ class Helper():
 
 		return content
 
-	#converts the string to 8859-1 enconding
-	#@args list with strings on utf-8 enconding
-	#return	list with strings on iso-8859-1 enconding
-	@staticmethod
-	def convert_list_to_iso8859(list_utf8):
-
-		for i in range(len(list_utf8)):
-			list_utf8[i] = list_utf8[i].encode().decode("ISO-8859-1")
-
-		return list_utf8
-
 
 	# adds a certain extension to the name of files on the string
 	# @args  
@@ -68,30 +57,18 @@ class Helper():
 	#@args
 	#file_names - name of the txt files
 	@staticmethod
-	def generate_latex_with_text(file_names):
+	def generate_latex_with_tex_files(file_names):
 
-		file_txt = Helper().add_extension_list(file_names, ".txt")
 		file_latex = Helper().add_extension_list(file_names, ".tex")
+		content_list = []
+
+		for i in range (len(file_names)):
+			content_list.append(Helper().get_file_content(file_latex[i]))
 
 		for i in range(len(file_names)):
 			file = open(file_latex[i], "w")
-			content = Helper().get_file_content(file_txt[i])
-			file.write(Helper()._initial_latex_content()+content+Helper()._end_latex_content())
+			file.write(Helper()._initial_latex_content()+content_list[i]+Helper()._end_latex_content())
 			file.close()
 
-	#generate tex files with the list created on a python file
-	#@args
-	#file_names     -> name of the files that whats to be created(.tex)
-	#list_questions -> list that contains strings to be written on the
-	@staticmethod
-	def generate_latex_with_list(file_names, list_questions):
-		# converts the content of the string to iso-8859-1 because by default it's utf-8
-		list_question = Helper().convert_list_to_iso8859(list_questions)
-		file_latex = Helper().add_extension_list(file_names, ".tex")
-		
 
-		for i in range(len(list_question)):
-			file = open(file_latex[i], "w")
-			file.write(Helper()._initial_latex_content()+list_question[i]+Helper()._end_latex_content())
-			file.close()
 
