@@ -1,6 +1,10 @@
-# projeto_isel_
+# projeto_isel
 
-# autores:
+## authors:
 
-## Duarte Domingues
-## Miguel Távora
+### Duarte Domingues
+### Miguel Távora
+
+## Project coordenator:
+
+### João Beleza Sousa
