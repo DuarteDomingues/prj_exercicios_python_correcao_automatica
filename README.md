@@ -1,7 +1,7 @@
 # Projeto Exercícios Python de correção automática
 ## Projeto Final de Curso - LEIM 2020/2021
 
-### alunos:
+### Alunos:
 
 #### 45101 Miguel Távora
 #### 45140 Duarte Domingues
