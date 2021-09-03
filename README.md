@@ -1,4 +1,5 @@
-# projeto_isel
+# Exercícios Python de correção automática
+
 
 ## authors:
 
