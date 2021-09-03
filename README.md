@@ -10,6 +10,8 @@
 
 #### João Beleza Sousa
 
+### Organização das pastas:
+
 * A pasta 00_Planeamento contém um ficheiro excel com a agenda do projeto.
 * A pasta 01_Analise contém os casos de utilização desenvolvidos.
 * A pasta
