@@ -4,7 +4,7 @@
 ### alunos:
 
 #### 45101 Miguel Távora
-#### 45101 Duarte Domingues
+#### 45140 Duarte Domingues
 
 ### Orientador:
 
