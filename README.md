@@ -1,11 +1,11 @@
 # Exercícios Python de correção automática
 
 
-## authors:
+### alunos:
 
-### Duarte Domingues
-### Miguel Távora
+#### 45101 Miguel Távora
+#### 45101 Duarte Domingues
 
-## Project coordenator:
+### Orientador:
 
-### João Beleza Sousa
+#### João Beleza Sousa
