@@ -1,0 +1,97 @@
+\documentclass[12pt,varwidth=16cm,border=17pt]{standalone}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+
+\usepackage{listings}
+
+\usepackage[%
+    left=1.02in,%
+    right=0.50in,%
+    top=1.0in,%
+    bottom=1.0in,%
+]{geometry}%
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour}, 
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\scriptsize\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\normalsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=7pt,
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame = single,
+	literate = {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+        {Á}{{\'A}}1 {É}{{\'E}}1  {Í}{{\'I}}1 {Ó}{{\'O}}1  {Ú}{{\'U}}1
+        {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+        {À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+        {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+        {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+        {ç}{{\c c}}1 {Ç}{{\c C}}1 
+        {ã}{{\~a}}1 {õ}{{\~o}}1 {Ã}{{\~A}}1 {Õ}{{\~O}}1,
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+Perante a seguinte execução de Python 3. 
+
+%[language=Python, caption=Python example]%
+\begin{lstlisting}[language=Python]
+somador = Somador()
+print(somador.soma_lista([random.randint(1101,101), random.randint(2501,200), random.randint(3350,300)]))
+print(somador.soma_lista([-1*random.randint(1000,5000), -2*random.randint(2000, 8000)]))
+print(somador.soma_lista([random.randint(25,151), random.randint(12,350)]))
+somador.estatisticas()
+
+somador2 = Somador()
+print(somador2.soma_lista([random.randint(13,102), random.randint(14,103)]))
+print(somador2.soma_lista([-1*random.randint(80,500), -2*random.randint(90, 600), -3*random.randint(110,700)]))
+print(somador2.soma_lista([random.randint(120,800), random.randint(130,900), random.randint(140,1001), random.randint(160,1002)]))
+somador2.estatisticas()
+\end{lstlisting}
+
+
+Após implementar o método em falta da classe o output produzido pelas linhas 2, 3, 4 e 5 deve ser:
+\newline 
+\verb+6+\newline
+\verb+-30+\newline
+\verb+150+\newline
+numero de listas somadas = \verb+3+\newline
+numero parcelas somadas  = \verb+7+\newline
+total somado             = \verb+126+\newline
+parcela minima           = \verb+-20+\newline
+parcela maxima           = \verb+100+\newline
+\newline
+\newline
+O output produzido pelas linhas 8, 9, 10 e 11 é:
+\newline
+\verb+101f+\newline
+\verb+102f+\newline
+\verb+103f+\newline
+numero de listas somadas = \verb+104f+\newline
+numero parcelas somadas  = \verb+105f+\newline
+total somado             = \verb+106f+\newline
+parcela minima           = \verb+107f+\newline
+parcela maxima           = \verb+108f+\newline
+\end{document}

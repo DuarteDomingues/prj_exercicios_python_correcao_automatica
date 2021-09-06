@@ -1,0 +1,7 @@
+print('py  th  on')
+print('Python')
+print('python', 'monty')
+print('PYTHON')
+print('p y t h o n')
+print('\n')
+print('python')
