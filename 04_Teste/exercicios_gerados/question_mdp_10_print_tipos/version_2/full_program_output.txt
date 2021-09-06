@@ -1,0 +1,10 @@
+<class 'float'>
+<class 'NoneType'>
+<class 'list'>
+<class 'bool'>
+<class 'bool'>
+<class 'list'>
+<class 'str'>
+<class 'int'>
+<class 'tuple'>
+<class 'str'>

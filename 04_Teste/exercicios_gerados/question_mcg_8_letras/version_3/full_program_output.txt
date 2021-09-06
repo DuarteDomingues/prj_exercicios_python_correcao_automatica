@@ -1,0 +1,4 @@
+lins
+Traceback (most recent call last):
+  File "<string>", line 13, in <module>
+AttributeError: 'Letras' object has no attribute 'primeira_letra'

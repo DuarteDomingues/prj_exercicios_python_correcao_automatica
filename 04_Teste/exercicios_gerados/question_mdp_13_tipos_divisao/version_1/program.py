@@ -1,0 +1,6 @@
+print(7/15)
+print(7-15)
+print(type(7))
+print(type(15))
+print(type(7/15))
+print(type(7-15))

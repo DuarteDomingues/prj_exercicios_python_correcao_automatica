@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 3
+    2k = 2 * k
+     ^
+SyntaxError: invalid syntax

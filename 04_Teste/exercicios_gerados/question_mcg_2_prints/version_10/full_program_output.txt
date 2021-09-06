@@ -1,0 +1,24 @@
+construtor: INÍCIO
+construtor: criação de um objeto da classe D
+construtor: definição do atributo d
+construtor: inicialização do atributo d com o valor: 28
+construtor: FIM
+construtor: INÍCIO
+construtor: criação de um objeto da classe D
+construtor: definição do atributo d
+construtor: inicialização do atributo d com o valor: 17
+construtor: FIM
+método y: INÍCIO
+método y: execução do método y
+método y: no objeto do tipo d com atributo d: 28
+método y: FIM
+método y: INÍCIO
+método y: execução do método y
+método y: no objeto do tipo d com atributo d: 17
+método y: FIM
+construtor: INÍCIO
+construtor: criação de um objeto da classe D
+construtor: definição do atributo d
+construtor: inicialização do atributo d com o valor: 30
+construtor: FIM
+<class 'D'>

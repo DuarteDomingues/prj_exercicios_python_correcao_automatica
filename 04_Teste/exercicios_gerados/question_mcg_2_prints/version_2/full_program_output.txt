@@ -1,0 +1,24 @@
+construtor: INÍCIO
+construtor: criação de um objeto da classe O
+construtor: definição do atributo o
+construtor: inicialização do atributo o com o valor: 24
+construtor: FIM
+construtor: INÍCIO
+construtor: criação de um objeto da classe O
+construtor: definição do atributo o
+construtor: inicialização do atributo o com o valor: 13
+construtor: FIM
+método y: INÍCIO
+método y: execução do método y
+método y: no objeto do tipo o com atributo o: 24
+método y: FIM
+método y: INÍCIO
+método y: execução do método y
+método y: no objeto do tipo o com atributo o: 13
+método y: FIM
+construtor: INÍCIO
+construtor: criação de um objeto da classe O
+construtor: definição do atributo o
+construtor: inicialização do atributo o com o valor: 37
+construtor: FIM
+<class 'O'>

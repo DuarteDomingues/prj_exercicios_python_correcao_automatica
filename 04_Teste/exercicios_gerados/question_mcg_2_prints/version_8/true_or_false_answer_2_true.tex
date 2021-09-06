@@ -1,0 +1,76 @@
+\documentclass[12pt,varwidth=16cm,border=17pt]{standalone}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+\usepackage{listings}
+
+\usepackage[%
+    left=1.02in,%
+    right=0.50in,%
+    top=1.0in,%
+    bottom=1.0in,%
+]{geometry}%
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour}, 
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\scriptsize\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\normalsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=7pt,
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame = single,
+	literate = {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+        {Á}{{\'A}}1 {É}{{\'E}}1  {Í}{{\'I}}1 {Ó}{{\'O}}1  {Ú}{{\'U}}1
+        {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+        {À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+        {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+        {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+        {ç}{{\c c}}1 {Ç}{{\c C}}1 
+        {ã}{{\~a}}1 {õ}{{\~o}}1 {Ã}{{\~A}}1 {Õ}{{\~O}}1,
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+
+Considere a linha de código 22:
+
+%[language=Python, caption=Python example]%
+\begin{lstlisting}[language=Python]
+f.j()
+\end{lstlisting}
+
+A linha de código origina o seguinte output:
+
+%[language=Python, caption=Python example]%
+\begin{lstlisting}[language=Python]
+método j: INÍCIO
+método j: execução do método j
+método j: no objeto do tipo f com atributo f: 46
+método j: FIM
+\end{lstlisting}
+
+
+\end{document}
+

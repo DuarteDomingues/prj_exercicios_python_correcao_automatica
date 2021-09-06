@@ -1,0 +1,7 @@
+print('li  sb  on')
+print('Lisbon')
+print('lisbon', 'bridge')
+print('LISBON')
+print('l i s b o n ')
+print('\n')
+print('lisbon')

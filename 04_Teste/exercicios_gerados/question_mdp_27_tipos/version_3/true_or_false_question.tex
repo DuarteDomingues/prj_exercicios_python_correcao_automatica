@@ -1,0 +1,76 @@
+\documentclass[12pt,varwidth=16cm,border=17pt]{standalone}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+
+\usepackage{listings}
+
+\usepackage[%
+    left=1.02in,%
+    right=0.50in,%
+    top=1.0in,%
+    bottom=1.0in,%
+]{geometry}%
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour}, 
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\scriptsize\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\normalsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=7pt,
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame = single,
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+Considere a execução do programa Python 3, que se segue. 
+
+%[language=Python, caption=Python example]%
+\begin{lstlisting}[language=Python]
+f1 = None
+f2 = '518.0'
+f3 = [868, 237, 518]
+f4 = True
+f5 = False
+f6 = ['[]']
+f7 = 2.0
+f8 = 868
+f9 = (False, True)
+f10 = 'True'
+print(type(f1))
+print(type(f2))
+print(type(f3))
+print(type(f4))
+print(type(f5))
+print(type(f6))
+print(type(f7))
+print(type(f8))
+print(type(f9))
+print(type(f10))
+\end{lstlisting}
+
+Indique se é verdadeiro ou falso.
+\end{document}

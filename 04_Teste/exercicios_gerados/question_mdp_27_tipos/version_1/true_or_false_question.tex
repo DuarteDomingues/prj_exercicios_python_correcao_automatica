@@ -1,0 +1,76 @@
+\documentclass[12pt,varwidth=16cm,border=17pt]{standalone}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+
+\usepackage{listings}
+
+\usepackage[%
+    left=1.02in,%
+    right=0.50in,%
+    top=1.0in,%
+    bottom=1.0in,%
+]{geometry}%
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour}, 
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\scriptsize\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\normalsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=7pt,
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame = single,
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+Considere a execução do programa Python 3, que se segue. 
+
+%[language=Python, caption=Python example]%
+\begin{lstlisting}[language=Python]
+h1 = None
+h2 = '811.0'
+h3 = [453, 600, 811]
+h4 = True
+h5 = False
+h6 = ['[]']
+h7 = 2.0
+h8 = 453
+h9 = (False, True)
+h10 = 'True'
+print(type(h1))
+print(type(h2))
+print(type(h3))
+print(type(h4))
+print(type(h5))
+print(type(h6))
+print(type(h7))
+print(type(h8))
+print(type(h9))
+print(type(h10))
+\end{lstlisting}
+
+Indique se é verdadeiro ou falso.
+\end{document}

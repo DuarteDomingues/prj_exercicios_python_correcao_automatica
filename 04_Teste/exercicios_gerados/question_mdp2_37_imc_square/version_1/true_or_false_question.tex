@@ -1,0 +1,91 @@
+\documentclass[12pt,varwidth=16cm,border=17pt]{standalone}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+
+\usepackage{listings}
+
+\usepackage[%
+    left=1.02in,%
+    right=0.50in,%
+    top=1.0in,%
+    bottom=1.0in,%
+]{geometry}%
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour}, 
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\scriptsize\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\normalsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=7pt,
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame = single,
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+Em Pyhton 3, escreva e adicione ao seguinte programa a função \textbf{imc}, que retorna o valor do índice de massa corporal, consoante um argumento \verb+altura+ e um argumento \verb+massa+.
+\begin{itemize}
+    
+  \item Em Python 3, o operador de exponenciação (ou potência) é \verb+**+. Permite obter $potencia=base^{expoente}$ usando potencia = base ** expoente.
+  
+  
+  
+  \item  O índice de massa corporal, imc, de uma pessoa, é dado pela fórmula
+
+  \emph{imc=massa÷$altura^2$}. Onde \emph{massa} é o peso da pessoa, em Kg, e a \emph{altura} é a altura da pessoa, em m (metros);
+  \item A função \textbf{imc} irá ter como primeiro argumento \verb+altura+ e como segundo argumento \verb+massa+. A função \textbf{imc} retorna o imc correpondente ao peso e à altura. Use o operador de potência para calcular $altura^2$;
+  \item O valor retornado para o imc será arredondado para a segunda casa décimal;
+  \item A função \verb+seed+, é utilizada para inicializar um gerador de número aleatórios;
+  \item A função uniform, da biblioteca random, é utilizada para gerar valores do tipo float aleatórios num intervalo especifico.
+  
+  
+
+    
+\end{itemize}
+
+
+
+
+Considere a execução do programa Python 3, que se segue. 
+
+%[language=Python, caption=Python example]%
+\begin{lstlisting}[language=Python]
+import random
+
+random.seed(3154)
+
+lista_imc = []
+for i in range (1105):
+    altura = round(random.uniform(1,2),2)
+    massa  = round(random.uniform(40,80),2)
+    lista_imc.append(imc(altura,massa))
+
+print(lista_imc[1086])
+print(type(2**2))
+\end{lstlisting}
+
+Indique se é verdadeiro ou falso.
+\end{document}

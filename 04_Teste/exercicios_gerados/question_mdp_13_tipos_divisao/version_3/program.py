@@ -1,0 +1,6 @@
+print(2/10)
+print(2-10)
+print(type(2))
+print(type(10))
+print(type(2/10))
+print(type(2-10))

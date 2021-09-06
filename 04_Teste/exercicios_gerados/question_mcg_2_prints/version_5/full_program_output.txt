@@ -1,0 +1,24 @@
+construtor: INÍCIO
+construtor: criação de um objeto da classe H
+construtor: definição do atributo h
+construtor: inicialização do atributo h com o valor: 2
+construtor: FIM
+construtor: INÍCIO
+construtor: criação de um objeto da classe H
+construtor: definição do atributo h
+construtor: inicialização do atributo h com o valor: 38
+construtor: FIM
+método y: INÍCIO
+método y: execução do método y
+método y: no objeto do tipo h com atributo h: 2
+método y: FIM
+método y: INÍCIO
+método y: execução do método y
+método y: no objeto do tipo h com atributo h: 38
+método y: FIM
+construtor: INÍCIO
+construtor: criação de um objeto da classe H
+construtor: definição do atributo h
+construtor: inicialização do atributo h com o valor: 17
+construtor: FIM
+<class 'H'>

@@ -1,0 +1,7 @@
+print('be  au  ty')
+print('Beauty')
+print('beauty', 'monkey')
+print('BEAUTY')
+print('b e a u t y ')
+print('\n')
+print('beauty')

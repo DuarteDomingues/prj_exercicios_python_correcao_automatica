@@ -1,0 +1,24 @@
+construtor: INÍCIO
+construtor: criação de um objeto da classe F
+construtor: definição do atributo f
+construtor: inicialização do atributo f com o valor: 46
+construtor: FIM
+construtor: INÍCIO
+construtor: criação de um objeto da classe F
+construtor: definição do atributo f
+construtor: inicialização do atributo f com o valor: 11
+construtor: FIM
+método y: INÍCIO
+método y: execução do método y
+método y: no objeto do tipo f com atributo f: 46
+método y: FIM
+método y: INÍCIO
+método y: execução do método y
+método y: no objeto do tipo f com atributo f: 11
+método y: FIM
+construtor: INÍCIO
+construtor: criação de um objeto da classe F
+construtor: definição do atributo f
+construtor: inicialização do atributo f com o valor: 33
+construtor: FIM
+<class 'F'>

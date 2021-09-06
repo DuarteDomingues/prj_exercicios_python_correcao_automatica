@@ -1,0 +1,4 @@
+-1773.972972972973
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+ZeroDivisionError: division by zero

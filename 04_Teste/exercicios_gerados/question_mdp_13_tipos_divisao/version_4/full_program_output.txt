@@ -1,0 +1,6 @@
+0.4166666666666667
+-7
+<class 'int'>
+<class 'int'>
+<class 'float'>
+<class 'int'>

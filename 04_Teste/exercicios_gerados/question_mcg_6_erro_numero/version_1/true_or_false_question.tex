@@ -1,0 +1,90 @@
+\documentclass[12pt,varwidth=16cm,border=17pt]{standalone}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+
+\usepackage{listings}
+
+\usepackage[%
+    left=1.02in,%
+    right=0.50in,%
+    top=1.0in,%
+    bottom=1.0in,%
+]{geometry}%
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour}, 
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\scriptsize\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\normalsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=7pt,
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame = single,
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+Em Pyhton 3, adicione ao seguinte código o construtor da classe \verb+Numero+ e o método \verb+ordenar_lista_decresente+:
+
+\begin{itemize}
+
+  \item Para além de self, o construtor da classe \verb+Numero+, tem o argumento \verb+valor+;
+  \item Os objetos do tipo \verb+Numero+ têm o atributo \verb+valor+;
+  \item O atributo \verb+valor+ é inicializado, no construtor, com o valor
+  do argumento \verb+valor+;
+  \item os objetos do tipo \verb+Numero+ têm um método \verb+ordenar_lista_decresente.+ O
+    método \verb+ordenar_lista_decresente+ recebe um argumento chamado \verb+lista+ do tipo
+  \verb+list+ que ordena uma lista de forma decrescente e retorna-a.
+    
+  \item a função \verb+seed+, é utilizada para inicializar um gerador de número aleatórios.
+    
+\end{itemize}
+
+Considere a execução do seguinte código Python 3.
+
+
+%[language=Python, caption=Python example]%
+\begin{lstlisting}[language=Python]
+import random
+random.seed(166)
+
+class Numero:
+
+    def generate_random_lists(self, lists_length):
+        lista = []
+        for i in range (self.valor):
+            lista_i = (random.sample(range(1, 40), lists_length))
+            lista_ordenada = self.ordenar_lista_decresente(lista_i)
+            lista.append(lista_ordenada)
+        
+        return lista
+
+
+a = Numero(55)
+print (a.generate_random_lists(5)[23][4])
+\end{lstlisting}
+
+Indique se é verdadeiro ou falso.
+\end{document}

@@ -1,0 +1,94 @@
+\documentclass[12pt,varwidth=16cm,border=17pt]{standalone}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+
+\usepackage{listings}
+
+\usepackage[%
+    left=1.02in,%
+    right=0.50in,%
+    top=1.0in,%
+    bottom=1.0in,%
+]{geometry}%
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour}, 
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\scriptsize\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\normalsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=7pt,
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame = single,
+	literate = {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+        {Á}{{\'A}}1 {É}{{\'E}}1  {Í}{{\'I}}1 {Ó}{{\'O}}1  {Ú}{{\'U}}1
+        {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+        {À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+        {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+        {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+        {ç}{{\c c}}1 {Ç}{{\c C}}1 
+        {ã}{{\~a}}1 {õ}{{\~o}}1 {Ã}{{\~A}}1 {Õ}{{\~O}}1,
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+Em Pyhton 3, complete a classe Somador, no ficheiro \verb+somador.py+:
+
+\begin{itemize}
+  \item a classe possui um construtor, e dois métodos. O método \verb+soma_lista+ e o método estatisticas;
+  \item o método \verb+soma_lista+ deve ser implementado, onde recebe como argumento: \verb+self+ e uma lista de números designado por \verb+lista+. O retorno do método é o somatório de todos os números dentro da lista;
+  \item dentro do método \verb+soma_lista+ deve utilizar os atributos \verb+max+, \verb+min+, \verb+tota+l, \verb+parcelas+ e \verb+listas+. Os dois \verb+underscores+ antes do nome de cada atributo deve ser ignorado, servem somente para atribuir visibilidade privada aos atributos;
+  \item o atributo \verb+max+ devolve o maior número dentro de todas as listas utilizadas no método \verb+soma_lista+, o atributo \verb+min+ devolve o menor número dentro das listas, o atributo \verb+total+ devolve a soma de todos os números das listas utilizadas, o atributo \verb+parcelas+ corresponde ao número total de índices das listas utilizadas e o atributo \verb+listas+ ao número de vezes que foi chamado o método \verb+soma_lista+;
+\end{itemize}
+
+Considere a execução do programa Python 3, que se segue. 
+
+%[language=Python, caption=Python example]%
+\begin{lstlisting}[language=Python]
+import random
+
+random.seed(69214)
+
+class Somador:
+
+	def __init__(self):
+
+		self.__max         = 0
+		self.__min         = 0
+		self.__total       = 0
+		self.__parcelas    = 0
+		self.__listas      = 0
+
+	def estatisticas(self):
+
+		print("número de listas somadas = "+str(self.__listas))
+		print("número parcelas somadas = "+str(self.__parcelas))
+		print("total somado = "+str(self.__total))
+		print("parcela mínima = "+str(self.__min))
+		print("parcela máxima = "+str(self.__max))
+\end{lstlisting}
+
+Indique se é verdadeiro ou falso.
+\end{document}

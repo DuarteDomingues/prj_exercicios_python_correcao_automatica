@@ -1,0 +1,4 @@
+Cryptography and Network Security
+Traceback (most recent call last):
+  File "<string>", line 9, in <module>
+AttributeError: 'Livro' object has no attribute 'autor'

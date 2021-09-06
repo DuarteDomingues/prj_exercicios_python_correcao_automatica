@@ -1,0 +1,103 @@
+\documentclass[12pt,varwidth=16cm,border=17pt]{standalone}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+
+\usepackage{listings}
+
+\usepackage[%
+    left=1.02in,%
+    right=0.50in,%
+    top=1.0in,%
+    bottom=1.0in,%
+]{geometry}%
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour}, 
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\scriptsize\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\normalsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=7pt,
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame = single,
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+Em Pyhton 3, construa a classe \verb+X+ com os seguintes requesitos:
+
+\begin{itemize}
+
+  \item Para além de self, o construtor da classe \verb+X+, tem o argumento \verb+x+;
+  \item Os objetos do tipo \verb+X+ têm o atributo \verb+x+;
+  \item O atributo \verb+x+ é inicializado, no construtor, com o valor
+	do argumento \verb+x+;
+  \item Os objetos do tipo \verb+X+ têm um método \verb+y+. O
+    método \verb+y+ possui somente o argumento self e retorna o valor do atributo \verb+x+.
+	
+  \item Os objetos do tipo \verb+X+ têm um método \verb+z+. O
+    método \verb+z+ recebe como argumento o self e um argumento \verb+y+. 
+	O método \verb+z+ realiza a afetação do atributo \verb+x+ pelo valor do argumento \verb+y+.
+    
+ \item Os objetos do tipo \verb+X+ têm um método \verb+obter_contagem_string.+ O
+    método além do self, recebe um argumento \verb+lista+ do tipo list, e um argumento \verb+letra+ do tipo string. O método \verb+obter_contagem_string+ retorna o número de ocorrências do argumento letra na lista.
+    
+ \item A função \verb+seed+, é utilizada para inicializar um gerador de número aleatórios.
+    
+\end{itemize}
+
+Considere a execução do seguinte código Python 3.
+
+
+
+
+
+
+%[language=Python, caption=Python example]%
+\begin{lstlisting}[language=Python]
+import random
+import string
+
+random.seed(80446)
+
+lista = [''.join(random.choice(string.ascii_lowercase) for i in range(2)) for i in range(300)]
+x = X('s')
+y = X('s')
+z = X('s')
+print(x.obter_contagem_string(lista,x.y()))
+print(x.y())
+print(y.y())
+print(z.y())
+print(type(x.y()))
+x.z('j')
+y.z('m')
+print(x.y())
+print(y.y())
+print(z.y())
+print(type(y))
+\end{lstlisting}
+
+Indique se é verdadeiro ou falso.
+\end{document}

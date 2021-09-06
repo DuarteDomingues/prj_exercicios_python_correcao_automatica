@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+  File "C:\Users\Miguel\AppData\Local\Programs\Python\Python38\lib\random.py", line 40, in <module>
+    from warnings import warn as _warn
+  File "C:\Users\Miguel\AppData\Local\Programs\Python\Python38\lib\warnings.py", line 538, in <module>
+    _processoptions(sys.warnoptions)
+AttributeError: module 'sys' has no attribute 'warnoptions'

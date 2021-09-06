@@ -1,0 +1,117 @@
+\documentclass[12pt,varwidth=16cm,border=17pt]{standalone}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+
+\usepackage{listings}
+
+\usepackage[%
+    left=1.02in,%
+    right=0.50in,%
+    top=1.0in,%
+    bottom=1.0in,%
+]{geometry}%
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour}, 
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\scriptsize\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\normalsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=7pt,
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame = single,
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+Em Pyhton 3, escreva a classe \verb+GestorCodigoPostais+, no ficheiro \verb+gestor_codigos_postais.py+:
+
+\begin{itemize}
+
+  \item Para além de self, o construtor da classe \verb+GestorCodigoPostais+, tem o argumento \verb+codigos_postais+;
+  \item Os objetos do tipo \verb+GestorCodigoPostais+ têm o atributo \verb+codigos_postais+, que é uma \verb+lista+ de objetos do tipo \verb+CodigoPostal+ ;
+  
+  \item O atributo \verb+codigos_postais+ é inicializado, no construtor, com o valor do argumento \verb+codigos_postais+;
+  
+  \item Os objetos do tipo \verb+codigos_postais+ têm os métodos \verb+validar_codigos_postais+ e \verb+obter_codigos_postais_por_localidade+;
+  
+  \item O método \verb+validar_codigos_postais+ valida o atributo \verb+codigos_postais+, de forma ao atributo \verb+codigos_postais+ conter apenas códigos postais válidos;
+  \item Para um código postal ser válido o primeiro número tem que ter quatro digitos, o segundo número tem que ter três digitos e a localidade tem que estar apenas em letras capitais;
+  
+  \item O método \verb+obter_codigos_postais_por_localidade+, recebe o argumento \verb+localidade+, o método retorna uma lista de objetos do tipo CodigoPostal do atributo \verb+codigos_postais+ cujo a localidade é igual ao argumento \verb+localidade+ recebido;
+
+
+  \item A função \verb+seed+, é utilizada para inicializar um gerador de número aleatórios;
+    
+\end{itemize}
+
+%[language=Python, caption=Python example]%
+\begin{lstlisting}[language=Python]
+import random
+import string
+from gestor_codigos_postais import GestorCodigoPostais
+
+random.seed(61526)
+
+class CodigoPostal:
+
+    def __init__(self, digitos4, digitos3, localidade):
+
+        self.digitos4             = digitos4
+        self.digitos3             = digitos3
+        self.localidade           = localidade
+        self.separador_digitos    = '-'
+        self.separador_localidade = ' '
+    
+    def print_codigo_postal(self):
+
+        print(f"{self.digitos4}{self.separador_digitos}{self.digitos3}{self.separador_localidade}{self.localidade}")
+
+        
+
+list_localidades = ["LOURES","MAFRA","OEIRAS","CASCAIS","lisboa","ESPINHO","MAIA","Amarante","valongo","OVAR","Pombal","Batalha"]
+
+lista_codigos_postais = []
+for i in range (1000):
+
+    numero_4_digitos =  random.randint(1,12444)
+    numero_3_digitos =  random.randint(1,1153)
+    localidade       =  random.choice(list_localidades)
+    codigo_postal_i  =  CodigoPostal(numero_4_digitos,numero_3_digitos,localidade)
+
+    lista_codigos_postais.append(codigo_postal_i)
+
+
+g = GestorCodigoPostais(lista_codigos_postais)
+g.validar_codigos_postais()
+print(len(g.codigos_postais))
+g.codigos_postais[194].print_codigo_postal()
+codigos_postais_localidade = g.obter_codigos_postais_por_localidade("MAFRA")
+print(len(codigos_postais_localidade))
+\end{lstlisting}
+
+Indique se as seguintes perguntas são verdadeiras ou falsas.
+
+\end{document}

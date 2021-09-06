@@ -1,0 +1,24 @@
+construtor: INÍCIO
+construtor: criação de um objeto da classe S
+construtor: definição do atributo s
+construtor: inicialização do atributo s com o valor: 2
+construtor: FIM
+construtor: INÍCIO
+construtor: criação de um objeto da classe S
+construtor: definição do atributo s
+construtor: inicialização do atributo s com o valor: 21
+construtor: FIM
+método y: INÍCIO
+método y: execução do método y
+método y: no objeto do tipo s com atributo s: 2
+método y: FIM
+método y: INÍCIO
+método y: execução do método y
+método y: no objeto do tipo s com atributo s: 21
+método y: FIM
+construtor: INÍCIO
+construtor: criação de um objeto da classe S
+construtor: definição do atributo s
+construtor: inicialização do atributo s com o valor: 7
+construtor: FIM
+<class 'S'>

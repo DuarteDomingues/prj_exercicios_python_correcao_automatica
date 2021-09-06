@@ -1,0 +1,6 @@
+Learning Python
+271
+Beamer boy
+Traceback (most recent call last):
+  File "<string>", line 24, in <module>
+AttributeError: 'Cancao' object has no attribute 'numero_paginas'

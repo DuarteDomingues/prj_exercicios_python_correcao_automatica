@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 1
+    classe Animal:
+           ^
+SyntaxError: invalid syntax

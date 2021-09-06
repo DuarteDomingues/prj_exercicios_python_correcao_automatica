@@ -1,0 +1,113 @@
+\documentclass[12pt,varwidth=16cm,border=17pt]{standalone}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+
+\usepackage{listings}
+
+\usepackage[%
+    left=1.02in,%
+    right=0.50in,%
+    top=1.0in,%
+    bottom=1.0in,%
+]{geometry}%
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour}, 
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\scriptsize\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\normalsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=7pt,
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame = single,
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+
+Em Pyhton 3, complete a classe UmaClasse, no ficheiro \verb+uma_class.py+:
+
+\begin{itemize}
+  \item para além de self, o construtor da classe UmaClasse, tem o argumento \verb+um_argumento+;
+  \item os objetos do tipo UmaClasse têm o atributo \verb+um_atributo+;
+  \item o atributo \verb+um_atributo+ é inicializado, no construtor, com o valor
+do argumento \verb+um_argumento+;
+  \item os objetos do tipo UmaClasse têm um método \verb+um_metodo.+ O
+    método \verb+um_metodo+ retorna o atributo \verb+um_atributo+, com tamanho 6 desde o índice \verb+0+ até ao \verb+5+, do objeto self.
+\end{itemize}
+
+Considere a execução do seguinte código Python 3.
+
+
+
+%[language=Python, caption=Python example]%
+\begin{lstlisting}[language=Python]
+import string
+
+seed = 59449
+
+def pseudo_random_integer(min_int, max_int):
+    global seed
+    seed = (16807*seed) % 2147483647
+    return int(min_int + (max_int - min_int) * seed / 2147483646)
+
+
+
+class UmaClasse():
+
+	def gerar_lista_aleatoria(self):
+
+		strings_aleatorias = []
+
+		for i in range(1995):
+
+			strings_aleatorias.append(self.um_metodo()[pseudo_random_integer(0, 5)])
+
+		return strings_aleatorias
+
+
+string_completa = string.ascii_lowercase+string.ascii_uppercase
+string_aleatoria = ''.join([string_completa[pseudo_random_integer(17,42)] for i in range(1995)])
+lista_numeros_aleatorio = [pseudo_random_integer(10000,99999) for i in range(1995)]
+
+objeto1 = UmaClasse(string_aleatoria)
+objeto2 = UmaClasse(lista_numeros_aleatorio)
+
+print(objeto1.gerar_lista_aleatoria()[44])
+print(objeto2.gerar_lista_aleatoria()[24])
+
+r = objeto2
+a = r.um_metodo()
+print(a)
+
+r = objeto1
+a= r.um_metodo()
+print(a)
+print(type(r))
+print(type(a))
+\end{lstlisting}
+
+Indique se é verdadeiro ou falso.
+\end{document}

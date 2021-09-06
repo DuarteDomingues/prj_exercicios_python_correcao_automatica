@@ -1,0 +1,5 @@
+x
+w
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+IndexError: string index out of range
