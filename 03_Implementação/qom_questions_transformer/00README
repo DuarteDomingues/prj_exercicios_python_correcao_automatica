@@ -1,0 +1,15 @@
+
+2019/02/25
+
+This is the old 201509_python_exercises_generator cvs repository
+renamed and moved git.
+
+It is was renamed to the more general name questions_transformer
+because it is used to transform python questions but also other
+questions like mathematics ones.
+
+To use this package add the path to where you installed it in your
+system to your Python sys.path. For exemple,
+
+sys.path.append('/home/jbs/develop/201902_questions_transformer')
+
