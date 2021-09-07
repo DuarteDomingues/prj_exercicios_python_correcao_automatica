@@ -17,4 +17,4 @@
 * A pasta 02_Desenho contém os desenhos iniciais desenvolvidos no inicio do projeto.
 * A pasta 03_Implementacao contém todo o código desenvolvido na implementação do sistema e a biblioteca questions_transformer da autoria do orientador João Beleza Sousa.
 * A pasta 04_Teste contém os diferentes exercicios de trabalho de casa gerados, com multiplas versões.
-* O ficheiro Relatorio.pdf contém o relatório do projeto.
+* O ficheiro Relatorio.pdf contém o relatório do projeto, o relatório ainda não está na sua versão final.
